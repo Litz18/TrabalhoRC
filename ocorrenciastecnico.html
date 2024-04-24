@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver Ocorrências</title>
+    <!-- Adicione links para os estilos do Bootstrap (se não estiverem incluídos) -->
+    
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/prof.css">
+    <script src="js/getoco.js"></script>
+    <script src="js/getBySala.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Inovar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="center container p-3 my-3 border bg-dark text-white">
+        <h2 style="text-align: center;">Observações</h2>
+        <div>
+                <div class="mb-3">
+                    <label for="salaSelect" class="form-label">Selecione a Sala</label>
+                    <select class="form-select" id="salaSelect">
+                        <option value="" disabled selected>Escolha a sala</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="25A">25A</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                        <option value="32">32</option>
+                        <option value="33">33</option>
+                        <option value="34">34</option>
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                    </select>
+                </div>
+        </div>
+        <table class="table-dark">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>User ID</th>
+                    <th>Descrição</th>
+                    <th>Sala</th>
+                    <th>Data/Hora</th>
+                    <th>Verificado</th>
+                </tr>
+            </thead>
+            <tbody id="observationsData">
+
+            </tbody>
+        </table>
+        <p>
+             <div>
+                <button onclick="getAllObservations()" class="btn btn-outline-light btn-lg px-5 mb-3">Carregar</button>
+                <div class="btn btn-outline-light btn-lg px-5" onclick="window.location.href='tecnico.html'">Voltar ao Menu</div>
+                <button onclick="getObBySala()" class="btn btn-outline-light btn-lg px-5 mb-3">Carregar por sala</button>
+            </div>
+        </p>
+    </div>
+    
+   
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <script>

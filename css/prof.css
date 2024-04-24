@@ -1,0 +1,30 @@
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.dateaa {
+    width: 100%;
+}
+
+th {
+    background-color: gray  ;
+    color: white;
+} 
+.pad {
+    padding: 6px;
+}
+textarea {
+    resize: none;
+}
+
+img {
+    width: 50%;
+}
+
+.banana {
+    width: 20%;
+}
